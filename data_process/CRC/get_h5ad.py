@@ -7,7 +7,7 @@ from pretrained_model.h_optimus_1 import HO1Extractor
 if __name__ == "__main__":
     
     # Configure data and output paths.
-    raw_data_root = Path("/home/yfm/project/data")
+    raw_data_root = Path("xxx")
     project_root = Path(__file__).resolve().parents[2]
     crc_dir = raw_data_root / "CRC"
     crc_label_dir = crc_dir / "Pathology_SpotAnnotations"
