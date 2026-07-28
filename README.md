@@ -48,12 +48,6 @@ The experiments contain 23 tissue sections from breast and colorectal cancer coh
 | ViHBC3 | Breast cancer | Visium | 1 | 4,992 | 1,522 (30.49%) | [10x Genomics](https://www.10xgenomics.com/products/xenium-in-situ/preview-dataset-human-breast) |
 | **Total** | — | — | **23** | **34,390** | **16,291 (47.37%)** | — |
 
-The spot statistics are calculated from the processed `.h5ad` files used in the experiments.
-
-We will also provide a standardized archive containing the organized raw data and the processed `.h5ad` files:
-
-> **TransPID data archive:** [Zenodo DOI pending](https://doi.org/10.5281/zenodo.XXXXXXX)
-
 ## Data Organization
 
 The raw data directory is external to this repository and can be placed anywhere. When preprocessing, set `raw_data_root` in the corresponding script under `data_process/` to an absolute path, such as `/data/transpid` or `C:/project/data`.
@@ -87,7 +81,7 @@ raw_data_root/
     └── spatial/
 ```
 
-The preprocessing scripts in [`data_process`](data_process) convert the raw datasets into the project-local `processed_data/` directory. The released Zenodo archive will include these processed files, so feature extraction can be skipped when reproducing the reported experiments.
+The preprocessing scripts in [`data_process`] convert the raw datasets into the project-local `processed_data/` directory. The released Zenodo archive will include these processed files, so feature extraction can be skipped when reproducing the reported experiments.
 
 ```text
 processed_data/

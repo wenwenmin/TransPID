@@ -3,7 +3,6 @@ __pycache__/
 *.pyc
 .idea/
 
-processed_data/
 outputs/
 
 UNI2/
