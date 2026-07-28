@@ -1,0 +1,4 @@
+﻿defaults:
+  - /dataset: STHBC
+  - /cls: STHBC
+  - /callbacks: STHBC

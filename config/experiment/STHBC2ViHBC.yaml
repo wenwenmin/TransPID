@@ -1,0 +1,4 @@
+﻿defaults:
+  - /dataset: STHBC2ViHBC
+  - /cls: STHBC2ViHBC
+  - /callbacks: STHBC2ViHBC

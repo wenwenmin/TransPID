@@ -1,0 +1,7 @@
+﻿split_mode: loo
+all_names: []
+ref_names: []
+tgt_names: []
+data_dir: ""
+k_neighbors: 6
+num_workers: 4

@@ -1,0 +1,4 @@
+﻿defaults:
+  - /dataset: CRC2HBC
+  - /cls: CRC2HBC
+  - /callbacks: CRC2HBC

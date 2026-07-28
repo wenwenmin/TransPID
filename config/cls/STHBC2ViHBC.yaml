@@ -1,0 +1,31 @@
+﻿defaults:
+  - base
+  - _self_
+
+training:
+  batch_size: 512
+  dropout: 0.1
+  cls_dropout: 0.1
+  gene_mask: 0.1
+  patch_mask: 0.1
+
+teacher:
+  training:
+    epochs: 100
+    warm_up_epoch: 30
+    optimizer:
+      lr: 5e-5
+      weight_decay: 4e-4
+
+
+student:
+  training:
+    epochs: 100
+    warm_up_epoch: 0
+    optimizer:
+      lr: 5e-5
+      weight_decay: 4e-4
+
+    dropout: 0.80
+    cls_dropout: 0.80
+    patch_mask: 0.80

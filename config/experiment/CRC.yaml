@@ -1,0 +1,4 @@
+﻿defaults:
+  - /dataset: CRC
+  - /cls: CRC
+  - /callbacks: CRC

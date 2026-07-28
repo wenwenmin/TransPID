@@ -1,0 +1,14 @@
+﻿precision: 16
+accelerator: auto
+devices: 1
+pin_memory: true
+persistent_workers: true
+test_num_workers: 0
+log_every_n_steps: 50
+enable_progress_bar: true
+cleanup:
+  teardown_strategy: true
+  empty_cuda_cache: true
+  gc_collect: true
+output:
+  results_filename: res.json

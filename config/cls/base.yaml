@@ -1,0 +1,35 @@
+﻿model:
+  gene_dim: 3000
+  patch_dim: 1536
+  align_dim: 128
+  num_layers: 2
+  num_heads: 8
+  cross_fusion:
+    use_moe: true
+    num_experts: 4
+    moe_top_k: 2
+    aux_loss_weight: 0.01
+
+training:
+  epochs: 100
+  warm_up_epoch: 0
+  batch_size: 512
+  dropout: 0.4
+  cls_dropout: 0.4
+  gene_mask: 0.4
+  patch_mask: 0.4
+
+  tmp: 0.07
+  learn_temperature: true
+
+  optimizer:
+    lr: 5e-5
+    weight_decay: 5e-3
+
+distillation:
+  enabled: true
+  copy_teacher_weights: true
+  teacher_checkpoint_dir: './results/teacher'
+  student_checkpoint_dir: './results/student'
+  temperature: 2.0
+  loss_weight: 1.0

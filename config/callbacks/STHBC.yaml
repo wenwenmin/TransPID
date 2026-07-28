@@ -1,0 +1,7 @@
+﻿defaults:
+  - base
+  - _self_
+
+ema:
+  enabled: true
+  decay: 0.996

@@ -1,0 +1,17 @@
+# Python cache
+__pycache__/
+*.pyc
+.idea/
+
+processed_data/
+outputs/
+
+UNI2/
+HOptimus1/
+scGPT_spatial_v1/
+scGPT_spatial_main/
+virchow2/
+UNI/
+genbio_pathfm/
+
+KDD2027_TransPID.pdf
